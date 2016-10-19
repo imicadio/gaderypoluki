@@ -1,5 +1,7 @@
 ## AiSD
 
+## PYTHON w wersji 3.x
+
 ## Ćwiczenie **2**
 Kod funkcji szyfrującej nie jest elegancki. Zawiera długą listę warunków if.. elif. Uprość kod stosując pętlę for. Upewnij się, że po modyfikacji funkcja przechodzi wszystkie testy.
 
