@@ -1,0 +1,19 @@
+# -*- encoding: utf8 -*-
+
+# Poniżej znajduje się funkcja szyfrująca wiadomości
+# szyfrem gaderypoluki (więcej informacji tutaj: https://pl.wikipedia.org/wiki/Gaderypoluki)
+# upewnij się, że funkcja działa poprawnie
+
+def gaderypoluki(wiadomosc):
+  szyfr = ''
+  for i in range(len(wiadomosc)):
+    if i%2==0:
+      szyfr += ('%s' %(wiadomosc[i+1]))
+    else:
+      szyfr += ('%s' %(wiadomosc[i-1]))
+
+  return szyfr
+
+print (gaderypoluki('gaderypoluki'))
+
+__author__      = "Michał Jeszko"
