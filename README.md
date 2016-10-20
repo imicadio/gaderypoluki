@@ -48,21 +48,23 @@ def gaderypoluki(wiadomosc):
 **Kod zmodyfikowany przeze mnie:** 
 
 ```
-# -*- encoding: utf8 -*-
+tuplelist = [("g", "a"), ("d", "e"), ("r", "y"), ("p", "o"), ("l" ,"u"), ("k", "i")]
 
-# Poniżej znajduje się funkcja szyfrująca wiadomości
-# szyfrem gaderypoluki (więcej informacji tutaj: https://pl.wikipedia.org/wiki/Gaderypoluki)
-# upewnij się, że funkcja działa poprawnie
+
+
 
 def gaderypoluki(wiadomosc):
-  szyfr = ''
-  for i in range(len(wiadomosc)):
-    if i%2==0:
-      szyfr += ('%s' %(wiadomosc[i+1]))
-    else:
-      szyfr += ('%s' %(wiadomosc[i-1]))
+    szyfr = ''
+    for i in range(len(wiadomosc)):
+        for x,y in tuplelist:
+            if wiadomosc[i] == x:
+                szyfr += y
+            if wiadomosc[i] == y:
+                szyfr += x
+            else:
+                szyfr += wiadomosc[i]
+                
 
-  return szyfr
-
-print (gaderypoluki('gaderypoluki'))
+    print (szyfr)
+    return szyfr
 ```
