@@ -48,7 +48,7 @@ def gaderypoluki(wiadomosc):
 **Kod zmodyfikowany przeze mnie:** 
 
 ```
-tuplelist = [("g", "a"), ("d", "e"), ("r", "y"), ("p", "o"), ("l" ,"u"), ("k", "i")]
+tuplelist = [("g", "a"), ("d", "e"), ("r", "y"), ("p", "o"), ("l" ,"u"), ("k", "i"), ("G", "A"), ("D", "E"), ("R", "Y"), ("P", "O"), ("L" ,"U"), ("K", "I")]
 
 def gaderypoluki(wiadomosc):
     szyfr = ""
