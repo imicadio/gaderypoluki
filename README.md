@@ -50,21 +50,29 @@ def gaderypoluki(wiadomosc):
 ```
 tuplelist = [("g", "a"), ("d", "e"), ("r", "y"), ("p", "o"), ("l" ,"u"), ("k", "i")]
 
-
-
-
 def gaderypoluki(wiadomosc):
-    szyfr = ''
+    szyfr = ""
+    check = 0
+
     for i in range(len(wiadomosc)):
         for x,y in tuplelist:
             if wiadomosc[i] == x:
+
                 szyfr += y
+                check = 1
             if wiadomosc[i] == y:
+
                 szyfr += x
-            else:
-                szyfr += wiadomosc[i]
-                
+                check = 1
+
+
+        if check == 0:
+            szyfr += wiadomosc[i]
+        check = 0
+
 
     print (szyfr)
     return szyfr
+
+gaderypoluki('ala ma kota')
 ```
