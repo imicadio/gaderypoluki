@@ -76,3 +76,40 @@ def gaderypoluki(wiadomosc):
 
 gaderypoluki('ala ma kota')
 ```
+
+
+
+## Ćwiczenie **2**
+
+Stwórz nową funkcję szyfrującą podstawieniowy, umożliwiającą zastosowanie dowolnego szyfru podstawieniowego. Funkcja być również pokryta testami. Funkcja powinna przyjmować 2 argumenty: wiadomosc i klucz, gdzie klucz to lista zawierająca krotki z podstawieniami.
+Przykładowo: wywołanie podstawieniowy('galop', [('g','a'),('d','e'),('r','y'),('p','o'),('l','u'),('k','i')]) powinno zwrócić agupo.
+
+
+```
+def podstawieniowy(wiadomosc, kod):
+    szyfr = ""
+    check = 0
+    tuplelist = kod
+
+    for i in range(len(wiadomosc)):
+        for x,y in tuplelist:
+            if wiadomosc[i] == x:
+                szyfr += y
+                check = 1
+            if wiadomosc[i] == y:
+                szyfr += x
+                check = 1
+        if check == 0:
+            szyfr += wiadomosc[i]
+        check = 0
+
+
+    print (szyfr)
+    return szyfr
+
+
+
+
+
+podstawieniowy ('galop', [('g','a'),('d','e'),('r','y'),('p','o'),('l','u'),('k','i')])
+```
