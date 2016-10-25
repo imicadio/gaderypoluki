@@ -79,7 +79,7 @@ gaderypoluki('ala ma kota')
 
 
 
-## Ćwiczenie **2**
+## Ćwiczenie **3**
 
 Stwórz nową funkcję szyfrującą podstawieniowy, umożliwiającą zastosowanie dowolnego szyfru podstawieniowego. Funkcja być również pokryta testami. Funkcja powinna przyjmować 2 argumenty: wiadomosc i klucz, gdzie klucz to lista zawierająca krotki z podstawieniami.
 Przykładowo: wywołanie podstawieniowy('galop', [('g','a'),('d','e'),('r','y'),('p','o'),('l','u'),('k','i')]) powinno zwrócić agupo.
